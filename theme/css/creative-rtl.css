@@ -62,7 +62,9 @@ div .method p {
     direction: ltr;
 }
 
-
+div .col-lg-4 {
+    float: right;
+}
 
 .bg-primary {
     background-color: #511857;
