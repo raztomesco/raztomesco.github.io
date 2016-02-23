@@ -146,6 +146,27 @@ ul.nav.navbar-nav {
     background-color: transparent;
 }
 
+.image { 
+   position: relative; 
+   /* width: 100%; /\* for IE 6 *\/ */
+}
+
+.image h2 { 
+   position: absolute; 
+   bottom: 0; 
+   left: 0; 
+   width: 100%; 
+}
+
+h2 span { 
+   color: white; 
+   font: bold 24px/45px Helvetica, Sans-Serif; 
+   letter-spacing: -1px;  
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 10px; 
+}
+
 @media(min-width:768px) {
     .navbar-default {
         border-color: rgba(255,255,255,.3);
@@ -498,8 +519,8 @@ img::-moz-selection {
 }
 
 .img-responsive:hover {
-     opacity: 0.3;
-     transform: scale(1.33);
+     opacity: 0.9;
+     /* transform: scale(1.33); */
      overflow: hidden;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;

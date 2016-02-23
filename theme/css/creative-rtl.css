@@ -518,12 +518,7 @@ img::-moz-selection {
 }
 
 .img-responsive:hover {
-     opacity: 0.3;
-     transform: scale(1.33);
      overflow: hidden;
-    -webkit-transition: all .35s;
-    -moz-transition: all .35s;
-    transition: all .35s;
 }
 
 body {
