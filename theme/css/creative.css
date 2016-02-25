@@ -221,7 +221,8 @@ h2 span {
 header {
     position: relative;
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
+    top: 50px;
     min-height: auto;
     text-align: center;
     color: #fff;
@@ -245,6 +246,7 @@ header .header-content .header-content-inner h1 {
     margin-bottom: 0;
     text-transform: uppercase;
     font-weight: 700;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 header .header-content .header-content-inner hr {
@@ -265,7 +267,7 @@ header .header-content .header-content-inner p {
 
     header .header-content {
         position: absolute;
-        top: 80%;
+        top: 60%;
         padding: 0 50px;
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
@@ -649,4 +651,51 @@ form {
     height: auto;
     margin-left: auto;
     margin-right: auto;
+}
+
+.carousel-indicators {
+    top: 10px;
+}
+
+.carousel-indicators .active{
+    background-color: #f0f0f0;
+}
+
+.carousel-indicators li {
+    border-color: #f0f0f0;
+}
+
+.modal-dialog {
+    height: 100%;
+}
+
+.modal-content {
+    height: 100%;
+}
+
+.modal-body {
+    height: 100%;
+}
+
+.modal-fullscreen .modal-dialog {
+  margin: 0;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .modal-fullscreen .modal-dialog {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .modal-fullscreen .modal-dialog {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .modal-fullscreen .modal-dialog {
+     width: 1170px;
+  }
 }

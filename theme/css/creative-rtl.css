@@ -568,6 +568,12 @@ form {
       text-align: center;
   }
 
+form .contact-info-group label:nth-child(1) {
+    float: right;
+    padding-left: 10px;
+    padding-right: 0;
+}
+
   img.gallery {
       margin: 10px;
       max-width: 95%;
