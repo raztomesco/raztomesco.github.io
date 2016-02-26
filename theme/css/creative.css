@@ -725,6 +725,10 @@ a.carousel-control.left {
     margin-right: auto;
 }
 
+.img-responsive {
+    width: 100%;
+}
+
 /* @media ( max-height: 700px) { */
 /*     .carousel-image { */
 /*         width: auto; */
