@@ -214,8 +214,8 @@ h2 span {
     header {
         position: relative;
         /* width: 100%; */
-        height: 100%;
-        min-height: auto;
+        max-height: 100%;
+        height: auto;
         text-align: center;
         color: #fff;
         /* background-image: url(/images/header.jpg); */
@@ -226,6 +226,8 @@ h2 span {
         -moz-background-size: cover;
         background-size: cover;
         -o-background-size: cover;
+        background-attachment: fixed !important;
+        background-size: cover !important;
     }
 }
 
@@ -233,8 +235,8 @@ h2 span {
     header {
         position: relative;
         /* width: 100%; */
-        height: 100%;
-        min-height: auto;
+        max-height: 100%;
+        height: auto;
         text-align: center;
         color: #fff;
         /* background-image: url(/images/header.jpg); */
@@ -245,6 +247,8 @@ h2 span {
         -moz-background-size: cover;
         background-size: cover;
         -o-background-size: cover;
+        background-attachment: fixed !important;
+        background-size: cover !important;
     }
 }
 
@@ -849,3 +853,16 @@ a.carousel-control.left {
         height: 500px;
     }
 }
+
+/* This part is for the lazyslides images */
+.blur-up {
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+    transition: filter 400ms, -webkit-filter 400ms;
+}
+
+.blur-up.lazyloaded {
+    -webkit-filter: blur(0);
+    filter: blur(0);
+}
+/* This part is for the lazyslides images */

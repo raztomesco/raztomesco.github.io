@@ -86,7 +86,18 @@
         <div class="row no-gutter">
         </div>
     </div>
-</section><!-- MORE -->
+</section>
+
+<script>
+  // show loading image
+  $('portfolio-thumb-loader').show();
+
+  // main image loaded ?
+  $('portfolio-thumb').on('load', function(){
+  // hide/remove the loading image
+  $('portfolio-thumb-loader').hide();
+  });
+</script><!-- MORE -->
 <section id="where_to_find_me" class="full-page whereimage">
     <div class="container">
         <div class="text-center">
@@ -144,6 +155,8 @@
 <script src="/theme/js/jquery.easing.min.js"></script>
 <script src="/theme/js/jquery.fittext.js"></script>
 <script src="/theme/js/wow.min.js"></script>
+<!-- lazysizes JavaScript -->
+<script src="/theme/js/lazysizes.min.js"></script>
 <!-- Custom Theme JavaScript -->
 <script src="/theme/js/creative.js"></script>    </body>
 </html>
